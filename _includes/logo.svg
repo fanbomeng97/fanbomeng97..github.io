@@ -1,17 +1,34 @@
-<svg width="47.00000000000001" height="15" xmlns="http://www.w3.org/2000/svg" class="logo">
- <defs>
-  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_2_blur">
-   <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
-  </filter>
- </defs>
+<svg width="510" height="510" xmlns="http://www.w3.org/2000/svg">
+
  <g>
   <title>background</title>
-  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+  <rect fill="none" id="canvas_background" height="512" width="512" y="-1" x="-1"/>
  </g>
  <g>
   <title>Layer 1</title>
-  <g id="logo">
-   <text filter="url(#svg_2_blur)" font-weight="normal" font-style="normal" stroke="null" transform="matrix(1.5185316241271103,0,0,1.566083886026712,0.10512234138869259,-2.09226289590721) " xml:space="preserve" text-anchor="start" font-family="Oswald, sans-serif" font-size="10" id="svg_2" y="9.594907" x="0.948584" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">Se7en</text>
+  <g id="svg_1">
+   <g id="svg_2">
+    <g id="svg_3">
+     <polygon id="svg_4" points="276.3330078125,319.00048828125 361.666015625,148.33349609375 361.666015625,105.66649627685547 233.66598510742188,105.66649627685547 233.66598510742188,148.33349609375 319,148.33349609375 233.66598510742188,319.00048828125 "/>
+     <path id="svg_5" d="m62.999993,105.666496l-42.667,0l0,341.333c0,23.573 19.093,42.667 42.667,42.667l341.333,0l0,-42.667l-341.333,0l0,-341.333z"/>
+     <path id="svg_6" d="m446.999993,20.333496l-298.667,0c-23.573,0 -42.667,19.093 -42.667,42.667l0,298.667c0,23.573 19.094,42.666 42.667,42.666l298.667,0c23.573,0 42.667,-19.093 42.667,-42.667l0,-298.666c-0.001,-23.574 -19.094,-42.667 -42.667,-42.667zm0,341.333l-298.667,0l0,-298.666l298.667,0l0,298.666z"/>
+    </g>
+   </g>
   </g>
+  <g id="svg_7"/>
+  <g id="svg_8"/>
+  <g id="svg_9"/>
+  <g id="svg_10"/>
+  <g id="svg_11"/>
+  <g id="svg_12"/>
+  <g id="svg_13"/>
+  <g id="svg_14"/>
+  <g id="svg_15"/>
+  <g id="svg_16"/>
+  <g id="svg_17"/>
+  <g id="svg_18"/>
+  <g id="svg_19"/>
+  <g id="svg_20"/>
+  <g id="svg_21"/>
  </g>
 </svg>
