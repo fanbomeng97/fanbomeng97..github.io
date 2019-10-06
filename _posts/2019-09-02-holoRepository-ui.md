@@ -173,14 +173,11 @@ Alternatively, you can start both client and server with one command: `docker-co
 
 The internal API between the client and the server can be found in `server/src/routes.ts` and essentially consists of these routes:
 
-<div style="background-color:#f4f4f4">
--
 - `/practitioners`
 - `/patients`
 - `/holograms`
 - `/pipelines`
 - `/imagingStudies`
-</div>
 
 ### Other services
 
