@@ -1,4 +1,5 @@
 <a class="post-card" href="{{ post.url | relative_url }}" itemprop="blogPosts" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <!-- 
   {% if post.featured-img %}
   <figure class="post-card__thumb">
     <img
@@ -13,6 +14,7 @@
     <div class="dark-bg"></div>
   </figure>
   {% endif %}
+  -->
   <div class="post-card__inner">
     <div class="post-card__header">
       <h2>{{ post.title | strip_html | truncate: 50 }}</h2>
