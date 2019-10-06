@@ -61,13 +61,11 @@ You need to have a recent version of `node` installed, for instance v12.6.0. `np
 
 When you run the app for the first time (or after making changes to the type definitions), you have to compile TypeScript. Either run `tsc -b` manually or use the `npm` scripts provided in the sub-directory:
 
-<div style="background-color:#f4f4f4">
 ```shell
  cd types
  npm install
  npm run build
 ```
-</div>
 
 Please refer to the `README` in the `/types` sub-directory for further instructions.
 
@@ -75,15 +73,12 @@ Please refer to the `README` in the `/types` sub-directory for further instructi
 
 This needs to be done in both the `client` and `server` sub-directories.
 
-<div style="background-color:#f4f4f4">
 ```shell
  npm install
 ```
-</div>
 
 #### Run in development mode
 
-<div style="background-color:#f4f4f4">
 ```shell
  # run server
  cd server
@@ -97,19 +92,14 @@ This needs to be done in both the `client` and `server` sub-directories.
  cd client
  npm run start
 ```
-</div>
 
 ### Local development
 
 Once the API server is started locally, it will be available at [http://localhost:3001/api/v1](http://localhost:3001/api/v1). It can be tested, for instance using `curl`:
 
-<div style="background-color:#f4f4f4">
-<div style="overflow-x: scroll" width = "100%">
 ```shell
  curl localhost:3001/api/v1/patients
 ```
-</div>
-</div>
 
 If you run the React client at the same time, it will be using port `3000` and accessing the server at `3001`.
 
@@ -117,7 +107,6 @@ If you run the React client at the same time, it will be using port `3000` and a
 
 Both client and server are tested using Jest.
 
-<div style="background-color:#f4f4f4">
 ```shell
  # run client tests
  cd client
@@ -127,7 +116,6 @@ Both client and server are tested using Jest.
  cd server
  npm run test
 ```
-</div>
 
 Jest provides a couple of advanced features, for instance you can generate a coverage report with `npm run test -- --coverage` or run tests in an interactive loop via `npm run test -- --watch`.
 
@@ -137,8 +125,6 @@ Jest provides a couple of advanced features, for instance you can generate a cov
 
 To build the software locally, run
 
-<div style="background-color:#f4f4f4">
-<div style="overflow-x: scroll" width = "100%">
 ```shell
  # compile and run server in production mode
  cd server
@@ -149,15 +135,11 @@ To build the software locally, run
  cd client
  npm run build
 ```
-</div>
-</div>
 
 ### Building and running the docker images
 
 Note that the actual deployment leverages Docker. A `Dockerfile` is provided for both client and server and the typical development workflow uses Azure DevOps pipelines to build and release the app.
 
-<div style="background-color:#f4f4f4" width = "100%"> 
-<div style="overflow-x: scroll" width = "100%">
 ```
  # client
  docker build \
@@ -176,8 +158,6 @@ Note that the actual deployment leverages Docker. A `Dockerfile` is provided for
  echo "Testing client" && curl http://localhost:3000/app/
  echo "Testing server" && curl http://localhost:3001/api/v1/patients
  ```
-</div>
-</div>
 
 Note that the `Dockerfile`s are specified independently of the build context through the `-f` flag. This is necessary in order to copy `./types`, which would otherwise cause an error as it is outside the default build context. The build context therefore needs to be this parent directory.
 

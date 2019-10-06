@@ -37,23 +37,17 @@ When the application is deployed, the documentation can also be viewed at the `/
 ### Installation
 To install program dependencies
 
-<div style="background-color:#f4f4f4">
 ```
  go get -d -v ./...
 ```
-</div>
 
 ### Run
 
 To run the server, first configure the necessary configurations then run the following
 
-<div style="background-color:#f4f4f4">
-<div style="overflow-x: scroll" width = "100%">
 ```
  go run cmd/holo-storage-accessor/main.go
 ```
-</div>
-</div>
 
 Verify the accessor by visiting `localhost:3200/api/v1` or `localhost:3200/api/v1/ui`
 
@@ -61,11 +55,9 @@ Verify the accessor by visiting `localhost:3200/api/v1` or `localhost:3200/api/v
 
 To run the tests
 
-<div style="background-color:#f4f4f4">
 ```
  go test ./...
 ```
-</div>
 
 To test the different API endpoints, there is a postman collection in the test folder.
 
@@ -75,23 +67,15 @@ Import them into [postman](https://www.getpostman.com/) and run through them.
 
 To run the server in a docker container
 
-<div style="background-color:#f4f4f4">
-<div style="overflow-x: scroll" width = "100%">
 ```
  docker build -t holo-storage-accessor .
 ```
-</div>
-</div>
 
 Once the image is built load the configuration, just run
 
-<div style="background-color:#f4f4f4">
-<div style="overflow-x: scroll" width = "100%">
 ```
  docker run -it --rm --env-file config.env -p 3200:3200 holo-storage-accessor
 ```
-</div>
-</div>
 
 You can then access the container via localhost:3200
 

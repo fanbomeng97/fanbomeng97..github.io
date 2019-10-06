@@ -56,11 +56,9 @@ Python 3.7 or above
 
 Dependencies can be installed by using pip command as follow
 
-<div style="background-color:#f4f4f4">
 ```
  pip install -r requirements.txt
 ```
-</div>
 
 Some dependencies are not available through pip, they are listed below with their installation instructions
 
@@ -68,24 +66,18 @@ These 2 dependencies can be installed using Node.js package manager. Please make
 
 [**obj2gltf**](https://github.com/AnalyticalGraphicsInc/OBJ2GLTF)
 
-<div style="background-color:#f4f4f4">
 ```
  npm install -g obj2gltf
 ```
-</div>
 
 [**glTF Pipeline**](https://github.com/AnalyticalGraphicsInc/gltf-pipeline)
 
-<div style="background-color:#f4f4f4">
 ```
  npm install -g gltf-pipeline
 ```
-</div>
 
 ### Local usage
 
-<div style="background-color:#f4f4f4">
-<div style="overflow-x: scroll" width = "100%">
 ```
  usage: pipelineController.py [-h] [-c CONFIG] [-l] [-i NAME]
                               [-p [PARAM [PARAM ...]]]
@@ -107,18 +99,12 @@ These 2 dependencies can be installed using Node.js package manager. Please make
                          parameters for pipeline e.g. dicom folder name or HU
                          threshold
 ```
-</div>
-</div>
 
 #### Example usage
 
-<div style="background-color:#f4f4f4">
-<div style="overflow-x: scroll" width = "100%">
 ```
  python pipelineController.py p4 -p 3_Axial_CE
 ```
-</div>
-</div>
 
 - `p4`: pipeline ID. In this case to segment lung and generate glb from it
 - `-p 3_Axial_CE`: param(s) for the specific pipeline, in this case a directory for an upper ct scan from medicalScans/dicom
@@ -127,54 +113,42 @@ These 2 dependencies can be installed using Node.js package manager. Please make
 
 Testing is done using pytest:
 
-<div style="background-color:#f4f4f4">
 ```
  pip install pytest
  pip install pytest-cov
 ```
-</div>
 
 Execute tests by running the following command in `HoloPipelines` directory:
 
-<div style="background-color:#f4f4f4">
 ```
  pytest --cov
 ```
-</div>
 
 > Note: Tests downloads sample files during the testing process. These files can be deleted by running _cleanUp.py_
 
 ## API specification
 
-<div style="background-color:#f4f4f4">
 ```
  GET /pipelineapp
 ```
-</div>
 
 To get a list of all available pipelines
 
-<div style="background-color:#f4f4f4">
 ```
  GET /job/<jobid>/status
 ```
-</div>
 
 To get the status of a job with specific ID
 
-<div style="background-color:#f4f4f4">
 ```
  POST /job
 ```
-</div>
 
 To start a job
 
-<div style="background-color:#f4f4f4">
 ```
  POST /status
 ```
-</div>
 
 To update status of a job
 

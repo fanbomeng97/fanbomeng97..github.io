@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HoloStorageAccessor
+title: HoloStorageConnector
 featured-img: emile-perron-190221
 ---
 
@@ -57,10 +57,8 @@ using HoloStorageConnector;
 </table>
 </div>
 
-####Example usage:
+#### Example usage:
 
-<div style="background-color:#f4f4f4">
-<div style="overflow-x: scroll" width = "100%">
 ```
  void Start()
  {
@@ -81,8 +79,6 @@ using HoloStorageConnector;
      }
  }
 ```
-</div>
-</div>
 
 ### HologramInstantiationSettings
 `HologramInstantiationSettings` script allow users to set the transform settings before load the 3D object from server, for example, set the position, rotation and scale of the 3D object, you can also determine whether the object could be manipulated or which scene you want to load.
@@ -118,12 +114,10 @@ using HoloStorageConnector;
   </tr>
 </table>
 
-####Example usage:
+#### Example usage:
 
 You could create a HologramInstantiationSettings instance before you load the hologram, and pass the settings as a parameter when call the LoadHologram method. The settings are optional, if you ignore the settings, the value of each properties will be set to default.
 
-<div style="background-color:#f4f4f4">
-<div style="overflow-x: scroll" width = "100%">
 ```
  void LoadModel()
  {
@@ -137,8 +131,6 @@ You could create a HologramInstantiationSettings instance before you load the ho
      HoloStorageClient.LoadHologram("hid", setting);
  }
 ```
-</div>
-</div>
 
 ### HoloStorageEntities
 `HoloStorageEntities` script is used to define the related HoloStorage entities, make it easier to map the information from json data. 

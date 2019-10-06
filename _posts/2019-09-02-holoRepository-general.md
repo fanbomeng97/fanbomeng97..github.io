@@ -62,14 +62,10 @@ Most of the components are kept here in the [HoloRepository-Core](https://github
 
 To get started, you should clone both relevant git repositories:
 
-<div style="background-color:#f4f4f4">
-<div style="overflow-x: scroll" width = "100%">
 ```shell
  $ git clone git@github.com:nbckr/HoloRepository-Core.git
  $ git clone git@github.com:nbckr/HoloRepository-HoloLens.git
 ```
-</div>
-</div>
 
 Next, it is highly recommended to expolore the `README`s that are provided for each component.
 
@@ -98,8 +94,6 @@ _Note: The `tslint.json` config is solely for this purpose. The actual JavaScrip
 
 The different components are meant to be deployed independently. They communicate via REST APIs, which are documented in the sub-directories' `README`s. For development, the system can be run on the same host, using these default ports:
 
-<div style="background-color:#f4f4f4">
-<div style="overflow-x: scroll" width = "100%">
 ```c
  HoloRepositoryUI/client:  3000
  HoloRepositoryUI/server:  3001
@@ -107,8 +101,6 @@ The different components are meant to be deployed independently. They communicat
  HoloStorageAccessor:      3200
  HoloPipelines/models:     5000, 5001, 5002, ...
 ```
-</div>
-</div>
 
 ### Run system in docker-compose
 
@@ -118,8 +110,6 @@ Note: To successfully start the Accessor, you need to provide the relevant confi
 
 This will also reflect the current state of the sub-components' `Dockerfile`s. To build and start all images (if they haven't been build already), run:
 
-<div style="background-color:#f4f4f4">
-<div style="overflow-x: scroll" width = "100%">
 ```shell
  $ docker-compose --file docker-compose.dev.yml up
  Starting holorepository-core_holorepository-ui-client_1                      ... done
@@ -127,30 +117,20 @@ This will also reflect the current state of the sub-components' `Dockerfile`s. T
  Starting holorepository-core_holorepository-ui-server_1                      ... done
  Creating holorepository-core_holostorage-accessor_1                          ... done
 ```
-</div>
-</div>
 
 Force a rebuild by replacing `docker-compose up` with `docker-compose build`.
 
 You can also just run a single component or a selection of components, but still use the provided configurations, port mappings etc. from the `docker-compose` file for convenience:
 
-<div style="background-color:#f4f4f4">
-<div style="overflow-x: scroll" width = "100%">
 ```shell
  $ docker-compose --file docker-compose.dev.yml up holostorage-accessor holorepository-ui-server
 ```
-</div>
-</div>
 
 Lastly, it is also possible to start the whole system except for one component, which will allow you to develop this component and, for instance, manually run it in dev mode.
 
-<div style="background-color:#f4f4f4">
-<div style="overflow-x: scroll" width = "100%">
 ```shell
  $ docker-compose --file docker-compose.dev.yml up --scale holostorage-accessor=0
 ```
-</div>
-</div>
 
 # Acknowledgements
 
