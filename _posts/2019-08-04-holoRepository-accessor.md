@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HoloStorageAccessor
-featured-img: background
+featured-img: emile-perron-190221
 ---
 
 # HoloStorageAccessor <a href="https://dev.azure.com/MSGOSHHOLO/HoloRepository/_build/latest?definitionId=1&branchName=dev"><img src="https://dev.azure.com/MSGOSHHOLO/HoloRepository/_apis/build/status/HoloRepository-Core?branchName=dev&jobName=HoloStorageAccessor" alt="HoloStorageAccessor build status" align="right" /></a>

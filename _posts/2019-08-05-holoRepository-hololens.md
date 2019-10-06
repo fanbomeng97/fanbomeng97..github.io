@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HoloRepository-HoloLens
-featured-img: background
+featured-img: emile-perron-190221
 ---
 
 # HoloRepository-HoloLens<a href="https://github.com/nbckr/HoloRepository-HoloLens/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/nbckr/HoloRepository-HoloLens"  align="right"/></a><a href="https://github.com/nbckr/HoloRepository-HoloLens/pulls"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/nbckr/HoloRepository-HoloLens"  align="right"/></a><a href="https://github.com/nbckr/HoloRepository-HoloLens/blob/master/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/nbckr/HoloRepository-HoloLens"  align="right"/></a><a href="https://www.codefactor.io/repository/github/nbckr/holorepository-hololens"><img alt="CodeFactor Grade" src="https://img.shields.io/codefactor/grade/github/nbckr/HoloRepository-HoloLens"  align="right"/></a>

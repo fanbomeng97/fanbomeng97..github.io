@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HoloRepository
-featured-img: background
+featured-img: emile-perron-190221
 ---
 
 # Background

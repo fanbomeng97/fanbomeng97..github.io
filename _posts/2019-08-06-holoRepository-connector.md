@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HoloStorageConnector
-featured-img: background
+featured-img: emile-perron-190221
 ---
 
 # HoloStorageConnector
