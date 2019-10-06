@@ -1,26 +1,17 @@
-<svg width="496.158" height="327.158" xmlns="http://www.w3.org/2000/svg">
-
+<svg width="47.00000000000001" height="15" xmlns="http://www.w3.org/2000/svg" class="logo">
+ <defs>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_2_blur">
+   <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+  </filter>
+ </defs>
  <g>
   <title>background</title>
-  <rect fill="none" id="canvas_background" height="329.158" width="498.158" y="-1" x="-1"/>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
  </g>
  <g>
   <title>Layer 1</title>
-  <g id="svg_3"/>
-  <g id="svg_4"/>
-  <g id="svg_5"/>
-  <g id="svg_6"/>
-  <g id="svg_7"/>
-  <g id="svg_8"/>
-  <g id="svg_9"/>
-  <g id="svg_10"/>
-  <g id="svg_11"/>
-  <g id="svg_12"/>
-  <g id="svg_13"/>
-  <g id="svg_14"/>
-  <g id="svg_15"/>
-  <g id="svg_16"/>
-  <g id="svg_17"/>
-  <text font-weight="normal" stroke="null" transform="matrix(1.2571430238335926,0,0,1.3142598867416382,-42.94462877164816,-12.398534594103694) " xml:space="preserve" text-anchor="start" font-family="Oswald, sans-serif" font-size="134" id="svg_19" y="183.054248" x="35.572628" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">Se7en</text>
+  <g id="logo">
+   <text filter="url(#svg_2_blur)" font-weight="normal" font-style="normal" stroke="null" transform="matrix(1.5185316241271103,0,0,1.566083886026712,0.10512234138869259,-2.09226289590721) " xml:space="preserve" text-anchor="start" font-family="Oswald, sans-serif" font-size="10" id="svg_2" y="9.594907" x="0.948584" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">Se7en</text>
+  </g>
  </g>
 </svg>
