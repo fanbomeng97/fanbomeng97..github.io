@@ -19,43 +19,16 @@ using HoloStorageConnector;
 ### HoloStorageClient
 `HoloStorageClient` script provided multiple methods to retrieve data from Storage server. For now, you could retrieve the meta data of patients, holograms and authors based on ID, and also load 3D object from the server. You have to create a co-routine to run the retrieve methods, the details could be found in example usage.
 
-<div style="overflow-x: scroll" width = "100%">
-<table width = "100%">
-  <tr >
-    <th style="background-color:#f0f0f0" width = "50%">Method</th>
-    <th style="background-color:#f0f0f0">Description</th>
-  </tr>
-  <tr>
-    <td>`GetMultiplePatients(List<Patient> patientList, string IDs)`</td>
-    <td >Retrieve multiple patients meta data from HoloStorage server</td>
-  </tr>
 
-  <tr>
-    <td style="background-color:#f0f0f0">`GetPatient(Patient patient, string patientID)`</td>
-    <td style="background-color:#f0f0f0">Retrieve a single patient meta data by patient ID</td>
-  </tr>
-  <tr>
-    <td>`GetMultipleHolograms(List<Hologram> hologramList, string IDs, QueryType queryType)`</td>
-    <td>Retrieve multiple holograms meta data from HoloStorage server. QueryType is optional, determines whether query holograms by hid or pid, could be either `QueryType.hid` or `QueryType.pid`, the default value is `QueryType.hid`</td>
-  </tr>
-  <tr>
-    <td style="background-color:#f0f0f0">`GetHologram(Hologram hologram, string holgramID)`</td>
-    <td style="background-color:#f0f0f0">Retrieve a single hologram meta data by hologram ID</td>
-  </tr>
-  <tr>
-    <td>`GetMultipleAuthors(List<Author> authorList, string IDs)`</td>
-    <td>Retrieve multiple authors meta data from HoloStorage server</td>
-  </tr>
-  <tr>
-    <td style="background-color:#f0f0f0">`GetAuthor(Author author, string authorID)`</td>
-    <td style="background-color:#f0f0f0">Retrieve a single author meta data by author ID</td>
-  </tr>
-  <tr>
-    <td>`LoadHologram(string hologramID, HologramInstantiationSettings setting)`</td>
-    <td>Load a Hologram object to scene by ID, Hologram instantiation settings is optional</td>
-  </tr>
-</table>
-</div>
+|Method|Description|
+| :--- | :--- |
+|`GetMultiplePatients(List<Patient> patientList, string IDs)`|Retrieve multiple patients meta data from HoloStorage server|
+|`GetPatient(Patient patient, string patientID)`|Retrieve a single patient meta data by patient ID|
+|`GetMultipleHolograms(List<Hologram> hologramList, string IDs, QueryType queryType)`|Retrieve multiple holograms meta data from HoloStorage server. QueryType is optional, determines whether query holograms by hid or pid, could be either `QueryType.hid` or `QueryType.pid`, the default value is `QueryType.hid`|
+|`GetHologram(Hologram hologram, string hologramID)`|Retrieve a single hologram meta data by hologram ID|
+|`GetMultipleAuthors(List<Author> authorList, string IDs)`|Retrieve multiple authors meta data from HoloStorage server|
+|`GetAuthor(Author author, string authorID)`|Retrieve a single author meta data by author ID|
+|`LoadHologram(string hologramID, HologramInstantiationSettings setting)`|Load a Hologram object to scene by ID, Hologram instantiation settings is optional|
 
 #### Example usage:
 
@@ -83,36 +56,14 @@ using HoloStorageConnector;
 ### HologramInstantiationSettings
 `HologramInstantiationSettings` script allow users to set the transform settings before load the 3D object from server, for example, set the position, rotation and scale of the 3D object, you can also determine whether the object could be manipulated or which scene you want to load.
 
-<table width = "100%">
-  <tr >
-    <th style="background-color:#f0f0f0" width = "12%">Properties</th>
-    <th style="background-color:#f0f0f0">Description</th>
-  </tr>
-  <tr>
-    <td>`Name`</td>
-    <td>Set a name for the loaded model. Default value is "LoadedModel"</td>
-  </tr>
-  <tr>
-    <td style="background-color:#f0f0f0">`Position`</td>
-    <td style="background-color:#f0f0f0">Set position for the loaded model, the value should be a Vector3 object. Default value is (0, 0, 0)</td>
-  </tr>
-  <tr>
-    <td>`Rotation`</td>
-    <td>Set rotation for the loaded model, the parameter should be a Vector3 object. Default value is (0, 0, 0)</td>
-  </tr>
-  <tr>
-    <td style="background-color:#f0f0f0">`Size`</td>
-    <td style="background-color:#f0f0f0">Real size in the scene, The longest side of the loaded object will be set to this value. Default value is 0.5f</td>
-  </tr>
-  <tr>
-    <td>`Manipulable`</td>
-    <td>Determine whether the object could be manipulated. Default setting is true</td>
-  </tr>
-  <tr>
-    <td style="background-color:#f0f0f0">`SeceneName`</td>
-    <td style="background-color:#f0f0f0">Determine which scene you want to load the object. Default value is null, which means the object will be loaded to the current active scene</td>
-  </tr>
-</table>
+|Properties|Description|
+| :--- | :--- |
+|`Name`|Set a name for the loaded model. Default value is "LoadedModel"|
+|`Position`|Set position for the loaded model, the value should be a Vector3 object. Default value is (0, 0, 0)|
+|`Rotation`|Set rotation for the loaded model, the parameter should be a Vector3 object. Default value is (0, 0, 0)|
+|`Size`|Real size in the scene, The longest side of the loaded object will be set to this value. Default value is 0.5f|
+|`Manipulable`|Determine whether the object could be manipulated. Default setting is true|
+|`SceneName`|Determine which scene you want to load the object. Default value is null, which means the object will be loaded to the current active scene|
 
 #### Example usage:
 
@@ -135,28 +86,12 @@ You could create a HologramInstantiationSettings instance before you load the ho
 ### HoloStorageEntities
 `HoloStorageEntities` script is used to define the related HoloStorage entities, make it easier to map the information from json data. 
 
-<table width = "100%">
-  <tr >
-    <th style="background-color:#f0f0f0" width = "12%">Classes</th>
-    <th style="background-color:#f0f0f0">Description</th>
-  </tr>
-  <tr>
-    <td>`Patient`</td>
-    <td>Patient object, contains the basic information of the patient, like id, name, date of birth and gender</td>
-  </tr>
-  <tr>
-    <td style="background-color:#f0f0f0">`Hologram`</td>
-    <td style="background-color:#f0f0f0">Hologram object, contains the basic information of the hologram, like title, create date and description</td>
-  </tr>
-  <tr>
-    <td>`Author`</td>
-    <td>Author of the Hologram, contains the ID and name of the author</td>
-  </tr>
-  <tr>
-    <td style="background-color:#f0f0f0">`PersonName`</td>
-    <td style="background-color:#f0f0f0">Name for a person, contains title, full name, given name and family name</td>
-  </tr>
-</table>
+|Classes|Description|
+| :--- | :--- |
+|`Patient`|Patient object, contains the basic information of the patient, like id, name, date of birth and gender|
+|`Hologram`|Hologram object, contains the basic information of the hologram, like title, create date and description|
+|`Author`|Author of the Hologram, contains the ID and name of the author|
+|`PersonName`|Name for a person, contains title, full name, given name and family name|
 
 ### Prefabs
 This package also provided some prefabs to save your development time, which could be found in Prefabs folder.
