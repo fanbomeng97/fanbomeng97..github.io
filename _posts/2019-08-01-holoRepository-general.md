@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HoloRepository
-featured-img: sleek
+featured-img: background
 ---
 
 # Background
