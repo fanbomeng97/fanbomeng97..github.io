@@ -1,6 +1,7 @@
 ---
 layout: post
 title: HoloStorageConnector
+summary: 一个Unity3D的Asset包，里面包含了连接HoloStorage的方法以及演示场景，加快了HoloLens应用开发者接入这个项目的进程。
 featured-img: emile-perron-190221
 ---
 

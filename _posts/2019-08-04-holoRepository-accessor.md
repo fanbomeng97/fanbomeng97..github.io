@@ -1,6 +1,7 @@
 ---
 layout: post
 title: HoloStorageAccessor
+summary: 项目中的云储存部分，使用了Blob storage，并且提供了一个可供与数据库交互的API，所有的病人信息以及全息图像都被储存在这里。
 featured-img: emile-perron-190221
 ---
 

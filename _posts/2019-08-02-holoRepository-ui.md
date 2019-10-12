@@ -1,6 +1,7 @@
 ---
 layout: post
 title: HoloRepositoryUI
+summary: 项目的网页客户端部分，用户从这里查看病人信息，选择生成新的3D医疗图像或者管理HoloStorage中的数据。
 featured-img: emile-perron-190221
 ---
 
