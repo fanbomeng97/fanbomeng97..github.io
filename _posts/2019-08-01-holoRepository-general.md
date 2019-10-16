@@ -1,7 +1,7 @@
 ---
 layout: post
-title: HoloRepository
-summary: 关于研究生阶段团队项目的介绍，与微软和伦敦GOSH医院合作完成。
+title: HoloRepository 项目
+summary: 关于研究生阶段团队项目的介绍，与微软和伦敦GOSH医院合作完成，这里把项目相关的文档搬运过来，做个记录。
 featured-img: emile-perron-190221
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: HoloPipelines
+summary: 这一部分主要负责生成3D医疗图像，运用了预先训练的神经网络模型，生成之后的全息图像将被存储咋HoloStorage中。
 featured-img: emile-perron-190221
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
-title: HoloRepository-HoloLens
+title: HoloLens Application
+summary: HoloLens应用，使用Unity3D开发，基于微软官方的MRTK v2工具包，允许用户在HoloLens设备上查看和操纵全息图像。
 featured-img: emile-perron-190221
 ---
 
