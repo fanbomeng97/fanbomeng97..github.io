@@ -7,7 +7,7 @@ featured-img: emile-perron-190221
 
 # 简介
 
-这是我在伦敦大学学院研究生阶段的团队项目，与微软和伦敦GOSH医院合作完成，在最终交付产品包括一个平台以及HoloLens应用，可以将CT、MRI等医疗图像转化成3D全息图像，在HoloLens中进行观察和操控。
+这是我在伦敦大学学院研究生阶段的团队项目，与微软和伦敦GOSH医院合作完成，在最终交付产品包括一个云原生分布式结构平台以及HoloLens应用，可以将CT、MRI等医疗图像转化成3D全息图像，在HoloLens中进行观察和操控。
 
 我在这个项目中主要负责HoloLens应用以及Unity Asset package的开发，此外我编写了我们的[项目网站](https://fanbomeng97.github.io/HoloRepository-Website/#/)。系列的文章一共有6篇，分别介绍项目中几个核心组成部分，这里将直接引用项目网站中的英语简介，不进行翻译。
 
