@@ -24,4 +24,6 @@ Hello，大家好，我是小七，一个喜欢编程的小菜鸡。没事喜欢
 
 当前Blog主题是[Sleek](https://github.com/janczizikow/sleek)，一款Jekyll主题，可能以后会尝试自己折腾一款主题，先挖个坑。
 
+还有，这个“关于作者”界面也太丑了，等有时间好好设计一下。
+
 <p align = "right">2019年10月6日</p>
